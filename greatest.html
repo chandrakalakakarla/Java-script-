@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Greatest among three numbers</h2>
+
+<p>Enter  first number </p>
+
+<input id="num1">
+
+<p>Enter second number </p>
+<input id="num2"><br>
+
+<p>Enter third number </p>
+<input id="num3"><br>
+
+
+<button type="button" onclick="great()">Find Greatest</button>
+
+<p id="demo"></p>
+
+<script>
+function great() {
+    let grt;
+  let x =Number(document.getElementById("num1").value);
+  let y =Number(document.getElementById("num2").value);
+  let z =Number(document.getElementById("num3").value);
+    if (x>y&&x>z)
+    grt=x;
+    else if (y>x&&y>z)
+    grt=y;
+    else 
+    grt=z;
+  
+  document.getElementById("demo").innerHTML = "Greatest is  " +grt  ;
+}
+</script>
+
+</body>
+</html> 

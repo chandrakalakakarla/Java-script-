@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Area of Triangle </h2>
+
+<p>Enter the breadth</p>
+
+<input id="num1">
+
+<p>Enter the height</p>
+<input id="num2"><br>
+
+
+<button type="button" onclick="areaOfTriangle()">Area</button>
+
+<p id="demo"></p>
+
+<script>
+function areaOfTriangle() {
+    let text;
+  let x =Number(document.getElementById("num1").value);
+  let y =Number(document.getElementById("num2").value);
+  text=(0.5)*x*y;
+  document.getElementById("demo").innerHTML = "Area of the Triangle is " +text  ;
+}
+</script>
+
+</body>
+</html> 

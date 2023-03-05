@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Converting celsius to Fahrenheit</h2>
+
+<p>celsius </p>
+
+<input id="num1">
+
+
+<button type="button" onclick="convert()">Convert</button>
+
+<p id="demo"></p>
+
+<script>
+function convert() {
+    let F;
+  let c =Number(document.getElementById("num1").value);
+   F=c*(1.8)+32;
+  document.getElementById("demo").innerHTML = "Temperature is " +F +"F"  ;
+}
+</script>
+
+</body>
+</html> 
